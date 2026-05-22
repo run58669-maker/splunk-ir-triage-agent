@@ -1,0 +1,14 @@
+{
+  "name": "Excessive Failed Logins - Single User",
+  "sid": "scheduler__admin__search__RMD5d34_at_1748835000_42",
+  "search": "index=main sourcetype=linux_secure action=failure user=jsmith earliest=-15m | stats count by user, src",
+  "result": {
+    "user": "jsmith",
+    "src": "203.0.113.47",
+    "count": 38,
+    "_time": "2026-05-21T23:48:12+09:00"
+  },
+  "time": "2026-05-21T23:48:12+09:00",
+  "owner": "admin",
+  "app": "search"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Suspicious PowerShell - Encoded Command",
+  "sid": "scheduler__admin__search__RMD5e88_at_1748835200_91",
+  "search": "index=main sourcetype=WinEventLog:PowerShell EventCode=4104 ScriptBlockText=\"*-enc*\" earliest=-5m | table host, user, ScriptBlockText",
+  "result": {
+    "host": "WIN-DEV-03",
+    "user": "DOMAIN\\jsmith",
+    "ScriptBlockText": "powershell.exe -nop -w hidden -enc JABjAGwAaQBlAG4AdAA9...",
+    "_time": "2026-05-21T23:51:30+09:00"
+  },
+  "time": "2026-05-21T23:51:30+09:00",
+  "owner": "admin",
+  "app": "search"
+}

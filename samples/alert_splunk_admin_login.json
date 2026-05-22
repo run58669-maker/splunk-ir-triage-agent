@@ -1,0 +1,13 @@
+{
+  "name": "Splunk Admin Session Activity",
+  "sid": "scheduler__admin__search__RMD5ff_at_1748886000_03",
+  "search": "index=_audit action=login info=succeeded user=admin earliest=-1h | stats count by user, host, src",
+  "result": {
+    "user": "admin",
+    "count": ">1",
+    "_time": "2026-05-22T16:30:00+09:00"
+  },
+  "time": "2026-05-22T16:30:00+09:00",
+  "owner": "admin",
+  "app": "search"
+}
